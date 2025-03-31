@@ -10,6 +10,7 @@
     timeout: 5000
 
   production:
+    url: <%= ENV["DATABASE_URL"] %>
     adapter: postgresql
     database: caffeinated_database_production
     pool: 5
