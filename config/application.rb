@@ -14,7 +14,7 @@ module Backend
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins "https://becaffeinated.vercel.app"
+        origins "https://becaffeinated.vercel.app", "http://localhost:5173"
         resource "*",
                  headers: :any,
                  methods: [ :get, :post, :put, :patch, :delete, :options, :head ]
